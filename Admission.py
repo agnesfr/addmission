@@ -2,6 +2,11 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+password_guess= st.text_input("Whats the password?", type="password")
+if password_guess != st.secrets['password']:
+    st.stop()
+    
+
 # Suppress warnings
 import warnings
 warnings.filterwarnings("ignore")
