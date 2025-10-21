@@ -3,7 +3,7 @@ import pickle
 import pandas as pd
 
 password_guess= st.text_input("Whats the password?", type="password")
-if password_guess != st.secrets['password']:
+if password_guess != st.secrets["password"]:
     st.stop()
     
 
